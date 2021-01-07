@@ -84,3 +84,7 @@ def full?(board)
     space == "X" or space=="O"
   end
 end
+
+def draw?(board)
+  return full?(board) && !won?(board)
+end
