@@ -31,5 +31,5 @@ def position_taken?(board, space)
 end
 
 def valid_move?(board, space)
-  return space.between?(0, board.length) && !position_taken?(board, space)
+  space.between?(0, board.length) && !position_taken?(board, space)
 end
