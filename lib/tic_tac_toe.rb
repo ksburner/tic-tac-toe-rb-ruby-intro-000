@@ -56,6 +56,6 @@ def turn(board)
     puts "Invalid move"
     turn(board)
   end
-  move(board, index. "X")
+  move(board, index, "X")
   display_board(board)
 end
