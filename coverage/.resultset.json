@@ -2,9 +2,26 @@
   "RSpec": {
     "coverage": {
       "/home/dandy-scope-055a/tic-tac-toe-rb-ruby-intro-000/lib/tic_tac_toe.rb": [
-
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
       ]
     },
-    "timestamp": 1610037876
+    "timestamp": 1610038000
   }
 }
