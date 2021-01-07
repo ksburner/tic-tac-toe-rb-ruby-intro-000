@@ -52,4 +52,4 @@ end
 def turn(board)
   puts "Give a move: 1-9"
   index = gets.strip |> input_to_index
-  
+end
