@@ -27,13 +27,9 @@ def move(board, space, token)
 end
 
 def position_taken?(board, space)
-  if space.between?(0, board.length) &&
-    (board[space] == "X" || board[space] == "O")
-    return true
-  end
-  return false
+  space.between?(0, board.length) && (board[space] == "X" || board[space] == "O")
 end
 
 def valid_move?(board, space)
-  space.between?(0, board.length) && !position_taken?(board, space) ? true : false
+  return space.between?(0, board.length) && !position_taken?(board, space)
 end
