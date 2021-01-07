@@ -32,5 +32,4 @@ def position_taken?(board, space)
     return true
   end
   return false
-  end
 end
