@@ -33,3 +33,10 @@ end
 def valid_move?(board, space)
   space.between?(0, board.length) && !position_taken?(board, space)
 end
+
+def turn_count(board)
+  count = 0
+  board.each do |space|
+    space == "X" || space == "O" ? count += 1 : count += 0
+  end
+end
