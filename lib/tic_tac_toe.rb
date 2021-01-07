@@ -97,3 +97,7 @@ def winner(board)
   combo = won?(board)
   combo ? board[combo[0]] : nil
 end
+
+def play(board)
+  turn(board)
+end
