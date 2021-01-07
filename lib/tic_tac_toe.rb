@@ -25,3 +25,10 @@ end
 def move(board, space, token)
   board[space] = token
 end
+
+def position_taken?(board, space)
+  if space.between?(0, board.length) && 
+
+
+  end
+end
