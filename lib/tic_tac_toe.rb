@@ -23,5 +23,5 @@ def input_to_index(input)
 end
 
 def move(board, space, token)
-
+  board[space] = token
 end
