@@ -28,7 +28,10 @@ end
 
 def position_taken?(board, space)
   if space.between?(0, board.length) &&
-
+    (board[space] == "X" || board[space] == "O")
+    return true
+  end
+  return false
 
   end
 end
