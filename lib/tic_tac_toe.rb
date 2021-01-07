@@ -92,3 +92,8 @@ end
 def over?(board)
   return full?(board) || won?(board) || draw?(board)
 end
+
+def winner(board)
+  combo = won?(board)
+  combo ? board[combo[0]] : nil
+end
