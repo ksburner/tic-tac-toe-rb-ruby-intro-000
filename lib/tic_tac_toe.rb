@@ -60,9 +60,19 @@ def turn(board)
   display_board(board)
 end
 
+def spaces_equal?(board, spaces)
+  if board.length == 0 || spaces.length == 0
+    return false
+  end
+  val = board[spaces[0]]
+  spaces.all? do |index|
+    board[index] == val
+  end
+end
+
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    if (space_occupied?(board, combo[0]) && spaces_equal?(board, combo))
+    if (position_taken?(board, combo[0]) && spaces_equal?(board, combo))
       return combo
     end
   end
