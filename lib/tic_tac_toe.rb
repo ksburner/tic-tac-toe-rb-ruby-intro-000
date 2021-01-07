@@ -59,3 +59,12 @@ def turn(board)
   move(board, index, "X")
   display_board(board)
 end
+
+def won?(board)
+  WIN_COMBINATIONS.each do |combo|
+    if (space_occupied?(board, combo[0]) && spaces_equal?(board, combo))
+      return combo
+    end
+  end
+  return false
+end
