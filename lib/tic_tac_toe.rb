@@ -106,4 +106,5 @@ def play(board)
     puts "Congrats, #{winner(board)}"
   else
     puts "It's a draw"
+  end
 end
