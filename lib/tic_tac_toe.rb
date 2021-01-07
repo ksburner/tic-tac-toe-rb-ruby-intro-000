@@ -52,4 +52,10 @@ end
 def turn(board)
   puts "Give a move: 1-9"
   index = input_to_index gets.strip
+  if !valid_move?(board, index)
+    puts "Invalid move"
+    turn(board)
+  end
+  move(board, index. "X")
+  display_board(board)
 end
